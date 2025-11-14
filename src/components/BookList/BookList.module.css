@@ -1,0 +1,114 @@
+/* src/components/BookList/BookList.module.css */
+.booklistRoot {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 12px;
+}
+.booklistHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+.anchorWrap {
+  position: relative;
+  display: inline-block;
+}
+
+.addButton {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.addButton:focus {
+  outline: 3px solid rgba(40, 167, 69, 0.25);
+}
+
+.booklistItems {
+  display: flex;
+  flex-direction: column;
+}
+
+/* popup panel */
+.popup {
+  position: absolute;
+  top: calc(100% + 8px); /* below the button */
+  right: 0;
+  width: 320px;
+  max-width: calc(100vw - 24px);
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  padding: 12px;
+  z-index: 50;
+}
+
+/* form inside popup */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.field label {
+  font-size: 0.95rem;
+}
+.field input,
+.field textarea {
+  border: 1px solid #d0d0d0;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+.field input:focus,
+.field textarea:focus {
+  outline: 3px solid rgba(0, 123, 255, 0.12);
+  border-color: #007bff;
+}
+
+.error {
+  color: #b00020;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 6px;
+}
+.cancelBtn {
+  background: transparent;
+  border: 1px solid #d0d0d0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.submitBtn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* small responsive tweak */
+@media (max-width: 420px) {
+  .popup {
+    right: 0;
+    left: 0;
+    width: auto;
+    margin: 0 12px;
+  }
+}

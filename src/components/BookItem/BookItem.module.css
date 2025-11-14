@@ -1,0 +1,49 @@
+.bookItem {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  align-items: flex-start;
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+.bookMedia {
+  flex: 0 0 100px;
+}
+.bookImg {
+  width: 100px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.bookContent {
+  flex: 1;
+  min-width: 0;
+}
+.bookTitle {
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+.bookControls {
+  margin-bottom: 8px;
+}
+.toggleButton {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.toggleButton:focus {
+  outline: 3px solid rgba(0, 123, 255, 0.25);
+}
+
+.bookDescription {
+  margin-top: 6px;
+  color: #333;
+}
